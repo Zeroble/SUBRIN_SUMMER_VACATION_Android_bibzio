@@ -6,21 +6,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:gravity="top"
     android:orientation="vertical"
-    android:weightSum="20"
     tools:context="com.example.sunrin.summervacation.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="9"
+        android:layout_weight="5"
         android:gravity="center">
 
         <LinearLayout
             android:id="@+id/stroke"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="150px"
+            android:layout_height="150px"
             android:background="@drawable/stroke"
             android:gravity="center">
 
@@ -30,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:onClick="Search"
-                android:text="0m"
+                android:text="100m\n이내 검색"
                 android:textAlignment="center" />
 
         </LinearLayout>
@@ -38,38 +37,145 @@
 
     <SeekBar
         android:id="@+id/seek"
-        android:layout_width="340dp"
-        android:layout_height="wrap_content" />
-
-    <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_weight="2"
-        android:orientation="horizontal">
+        android:layout_weight="3.01"
+        android:gravity="center"
+        android:paddingTop="10dp">
 
-        <TextView
-            android:layout_width="0dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/roundbox"
-            android:layout_marginLeft="5dp"/>
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/roundbox"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/roundbox"
-            android:layout_marginRight="5dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp">
+
+                    <CheckBox
+                        android:id="@+id/btn1"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/checkbox"
+                        android:elevation="3dp"
+                        android:gravity="center"
+                        android:text="치킨"
+                        android:textSize="20sp"
+                        android:button="@null"/>
+
+                    <CheckBox
+                        android:id="@+id/btn2"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/checkbox"
+                        android:elevation="3dp"
+                        android:gravity="center"
+                        android:text="피자"
+                        android:textSize="20sp"
+                        android:button="@null"/>
+
+                    <CheckBox
+                        android:id="@+id/btn3"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/checkbox"
+                        android:elevation="3dp"
+                        android:gravity="center"
+                        android:text="히오스"
+                        android:textSize="20sp"
+                        android:button="@null"/>
+
+                    <CheckBox
+                        android:id="@+id/btn4"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/checkbox"
+                        android:button="@null"
+                        android:elevation="3dp"
+                        android:gravity="center"
+                        android:text="양식"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp">
+
+                    <CheckBox
+                        android:id="@+id/btn5"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/checkbox"
+                        android:elevation="3dp"
+                        android:gravity="center"
+                        android:text="한식"
+                        android:textSize="20sp"
+                        android:button="@null"/>
+
+                    <CheckBox
+                        android:id="@+id/btn6"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/checkbox"
+                        android:elevation="3dp"
+                        android:gravity="center"
+                        android:text="일식"
+                        android:textSize="20sp"
+                        android:button="@null"/>
+
+                    <CheckBox
+                        android:id="@+id/btn7"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/checkbox"
+                        android:button="@null"
+                        android:elevation="3dp"
+                        android:gravity="center"
+                        android:text="중식"
+                        android:textSize="20sp" />
+
+                    <CheckBox
+                        android:id="@+id/btn8"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/checkbox"
+                        android:button="@null"
+                        android:elevation="3dp"
+                        android:gravity="center"
+                        android:text="시공"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
 
 
-    </LinearLayout>
+    </HorizontalScrollView>
+
 
 </LinearLayout>
